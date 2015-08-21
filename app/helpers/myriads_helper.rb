@@ -1,0 +1,2 @@
+module MyriadsHelper
+end
