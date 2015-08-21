@@ -2,7 +2,7 @@ require 'test_helper'
 
 class MyriadsControllerTest < ActionController::TestCase
   setup do
-    @myriad = myriads(:one)
+    @myriad = myriads(:m1)
   end
 
   test "should get index" do
@@ -18,7 +18,7 @@ class MyriadsControllerTest < ActionController::TestCase
 
   test "should create myriad" do
     assert_difference('Myriad.count') do
-      post :create, myriad: {  }
+      post :create, myriad: {name: 'Majry_20', race: 'whiteish'}
     end
 
     assert_redirected_to myriad_path(assigns(:myriad))
@@ -35,7 +35,7 @@ class MyriadsControllerTest < ActionController::TestCase
   end
 
   test "should update myriad" do
-    patch :update, id: @myriad, myriad: {  }
+    patch :update, id: @myriad, myriad: {name: 'Othername', race: 'blackish'}
     assert_redirected_to myriad_path(assigns(:myriad))
   end
 

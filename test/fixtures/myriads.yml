@@ -4,8 +4,16 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
+m1:
+  name: Myry
+  race: yellowish
+  lat: 34.23132
+  lng: -22.35513
 # column: value
 #
-two: {}
+m2:
+  name: Myrys
+  race: bluish
+  lat: 31.23132
+  lng: 28.35513
 #  column: value

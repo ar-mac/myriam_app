@@ -69,6 +69,6 @@ class MyriadsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def myriad_params
-      params[:myriad]
+      params.require(:myriad).permit(:name, :race, :lat, :lng)
     end
 end
